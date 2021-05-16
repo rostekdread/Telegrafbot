@@ -11,6 +11,14 @@ bot.start(ctx => {
     ctx.reply('Welcome, bro', getMainMenu())
 })
 
+bot.hears('test', ctx => {
+    ctx.replyWithPhoto(
+        'https://akprod.i.etsystatic.com/21830356/r/il/c434dc/3092324609/il_794xN.3092324609_lqbi.jpg',
+        {"reply_markup":{"inline_keyboard":[[{"text":"test button","callback_data":"test","hide":false}]]}, caption: 'жопа гавно'})
+})
+
+
+
 
 bot.hears('Каталог', ctx => {
     ctx.replyWithPhoto(
